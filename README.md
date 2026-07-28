@@ -16,3 +16,12 @@ Now, we check the IP and the logs attempts and its diference in time. If the att
 To log the time (since it used to be stored as string) I used datetime, so I can properly check the time.
 
 After detecting a brute force attack, we compare the ip with the successful log dictionary (accesos_por_ip), if the IP is logged, a severe warning is shown since the brute force attack actually worked.
+
+
+## V3 JSON creation
+
+Now I changed the output format, creating a new directory called "reports" that stores the reports made based on the file given by parameters.
+
+I check ip, severity, failed attempts, seconds, users tried, if the access was successful, access user and access hour and attach it to the JSON file with its date to better recognition.
+
+To get the command line argument I use 'sys.argv' to receive the file to analyze.
