@@ -1,0 +1,52 @@
+{
+    "fecha_del_reporte": "2026-07-28",
+    "archivo_analizado": "../samples/auth.log",
+    "total_Ip_sospechosas": 2,
+    "alertas": [
+        {
+            "ip": "45.142.120.15",
+            "severidad": "Alta",
+            "intentos_fallidos": 10,
+            "ventana_segundos": 27.0,
+            "usuarios_probados": [
+                "admin",
+                "admin",
+                "admin",
+                "root",
+                "root",
+                "test",
+                "test",
+                "oracle",
+                "oracle",
+                "postgres"
+            ],
+            "acceso_exitoso": true,
+            "usuario_acceso": [
+                "postgres"
+            ],
+            "hora_acceso": "08:16:15"
+        },
+        {
+            "ip": "185.220.101.45",
+            "severidad": "Moderada",
+            "intentos_fallidos": 12,
+            "ventana_segundos": 33.0,
+            "usuarios_probados": [
+                "user1",
+                "user2",
+                "user3",
+                "user4",
+                "user5",
+                "user6",
+                "user7",
+                "user8",
+                "user9",
+                "user10",
+                "user11",
+                "user12"
+            ],
+            "acceso_exitoso": false,
+            "hora_acceso": null
+        }
+    ]
+}
