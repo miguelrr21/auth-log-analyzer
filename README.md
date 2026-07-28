@@ -25,3 +25,11 @@ Now I changed the output format, creating a new directory called "reports" that 
 I check ip, severity, failed attempts, seconds, users tried, if the access was successful, access user and access hour and attach it to the JSON file with its date to better recognition.
 
 To get the command line argument I use 'sys.argv' to receive the file to analyze.
+
+## V4 Abuseipdb & shodan API implementation
+
+Last, I implemented my two (shodan and abuseipdb) APIs to check the malicious IPs, so I could get more information about them.
+
+The implementation required import os, requests & shodan, as well as dotenv to keep my APIs private.
+
+Real-world result: when testing against my sample log, AbuseIPDB returned a 100/100 abuse confidence score for 185.220.101.45 — independent confirmation that the IP flagged locally by the brute-force detection is also a known malicious IP in the real world.
